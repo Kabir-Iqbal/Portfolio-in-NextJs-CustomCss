@@ -1,0 +1,97 @@
+
+
+.body{
+    width: 85%;
+    justify-content: center;
+    padding-top: 2.5rem /* 40px */;
+    padding-bottom: 2.5rem /* 40px */;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .body{
+        width: 80%;
+    }
+    .projectbox{
+        gap: 2.75rem /* 44px */;
+    }
+}
+
+
+/* Main Heading */
+.mainheading{
+    font-size: 2.25rem /* 36px */;
+    line-height: 2.5rem /* 40px */;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1.5rem /* 24px */;
+    color: #facc15;
+}
+
+
+/* project Box */
+
+.projectbox{
+    margin-top: 6rem /* 96px */;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem /* 24px */;
+    color: white;
+}
+
+
+/* project card */
+
+.card{
+    height: 300px;
+    width: 200px;
+    font-weight: 700;
+    border-radius: 0.75rem /* 12px */;
+    border-color:  #fcd34d;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem /* 8px */;
+    position: relative;
+}
+
+/*image */
+
+.img{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    margin-top: 0.5rem /* 8px */;
+}
+
+
+/* icon box */
+.iconbox{
+    display: flex;
+    gap: 0.5rem /* 8px */;
+    position: absolute;
+    bottom: 0.5rem /* 8px */;
+    left: 0.25rem /* 4px */;
+}
+
+/* icon */
+.icon{
+    border-width: 1px;
+    color: #fbbf24 ;
+    border-color: #fbbf24;
+    padding: 0.5rem /* 8px */;
+    border-radius: 9999px;
+}
+
+.icon:hover{
+    color: #000000;
+    border-color: #6b7280;
+    background-color: #facc15;
+}

@@ -2,32 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+.btn:hover{
+    color: #facc15;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.btn::after{
+  margin-top: 3px;
+  content: " ";
+  display: block;
+  height: 3px;
+  background-color: yellow;
+  transform: scale(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.btn:hover::after{
+  transform: scale(1);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+.active::after{
+  margin-top: 3px;
+  content: " ";
+  display: block;
+  height: 3px;
+  background-color: yellow;
+  transform: scale(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
 }
+
+.active,.active::after {
+  color: rgb(250 204 21 / var(--tw-text-opacity, 1)) /* #facc15 */;
+  transform: scale(1);
+}
+

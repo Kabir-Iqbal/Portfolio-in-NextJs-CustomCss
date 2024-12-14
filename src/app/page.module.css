@@ -1,0 +1,194 @@
+
+
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1.5rem /* 24px */;
+    margin-right: 1.5rem /* 24px */;
+    gap: 0.75rem /* 12px */;
+    height: screen;
+    margin-top: 4rem /* 64px */;
+    margin: 40px 0 40px 0;
+}
+
+/* left Section */
+.left{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-left-color: rgb(251 191 36 / var(--tw-border-opacity, 1)) /* #fbbf24 */;
+    border-right-color: rgb(251 191 36 / var(--tw-border-opacity, 1)) /* #fbbf24 */;
+    height: 24rem /* 384px */;
+}
+
+.img{
+    width: 15rem /* 240px */;
+    height: 18rem /* 288px */;
+    border-radius: 9999px;
+}
+
+
+/* right */
+.right{
+    width: 95%;
+    height: fit-content;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem /* 4px */;
+    color: white;
+    margin-top: 50px;
+    
+}
+
+.right h2{
+    font-size: 1.875rem /* 30px */;
+    line-height: 2.25rem /* 36px */;
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.75rem /* 12px */ * var(--tw-space-x-reverse));
+    margin-left: calc(0.75rem /* 12px */ * calc(1 - var(--tw-space-x-reverse)))
+}
+
+.right h1{
+    font-size: 2.25rem /* 36px */;
+    line-height: 2.5rem /* 40px */;
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.75rem /* 28px */ * var(--tw-space-x-reverse));
+    margin-left: calc(1.75rem /* 28px */ * calc(1 - var(--tw-space-x-reverse)));
+    color: #facc15;
+    font-weight: 600;
+}
+.right p{
+    font-size: 0.875rem /* 14px */;
+    line-height: 1.25rem /* 20px */;
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.5rem /* 8px */ * var(--tw-space-x-reverse));
+    margin-left: calc(0.5rem /* 8px */ * calc(1 - var(--tw-space-x-reverse)));
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem /* 8px */ * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem /* 8px */ * var(--tw-space-y-reverse));
+    padding-left: 0.25rem /* 4px */;
+    padding-right: 0.25rem /* 4px */;
+    margin-top: 0.5rem /* 8px */;
+}
+
+/* Button Box */
+.btnbox{
+    text-align: start;
+    display: flex;
+    height: 7rem /* 112px */;
+    gap: 0.75rem /* 12px */;
+    align-items: center;
+    padding-left: 0.25rem /* 4px */;
+    padding-right: 0.25rem /* 4px */;
+    padding-left: 0.25rem /* 4px */;
+    padding-right: 0.25rem /* 4px */;
+    margin-top: 0.5rem /* 8px */;
+    margin-bottom: 0.5rem /* 8px */;
+    padding-top: 0.25rem /* 4px */;
+    padding-bottom: 0.25rem /* 4px */;
+}
+
+/* resume button */
+.btn{
+    display: flex;
+    gap: 0.25rem /* 4px */;
+    padding-top: 0.25rem /* 4px */;
+    padding-bottom: 0.25rem /* 4px */;
+    padding-left: 0.5rem /* 8px */;
+    padding-right: 0.5rem /* 8px */;
+    border-radius: 1.5rem /* 24px */;
+    border-width: 1px;
+    border-color: #fbbf24;
+    color: #fde047;
+    font-weight: 600;
+    font-size: 0.875rem /* 14px */;
+    line-height: 1.25rem /* 20px */;
+}
+.btn:hover{
+    background-color: #facc15;
+    border-color: #6b7280;
+    color: black;
+}
+
+.icon{
+    border-width: 1px;
+    color:  #fbbf24;
+    border-color: #fbbf24;
+    padding: 0.5rem /* 8px */;
+    border-radius: 9999px;
+}
+.icon:hover{
+    border-color: #6b7280;
+    color: black;
+    background-color:  #facc15 ;
+}
+
+
+
+
+
+
+
+@media (min-width: 640px) {
+    .left{
+        width: 30%;
+    }
+    .right h2{
+        font-size: 2.25rem /* 36px */;
+        line-height: 2.5rem /* 40px */;
+    }
+    .right h1{
+        font-size: 3.75rem /* 60px */;
+        line-height: 1;
+    }
+}
+
+
+
+/* responsive */
+@media (min-width: 768px) {
+    .hero{
+        flex-direction: row;
+        margin-left: 2.5rem /* 40px */;
+        margin-right: 2.5rem /* 40px */;
+        gap: 1.25rem /* 20px */;
+        height: 100vh;
+    }
+    .left{
+        width: 25%;
+    }
+    .img{
+        width: 18rem /* 288px */;
+        height: 20rem /* 320px */;
+    }
+    .right{
+        width: 60%;
+        text-align: end;
+    }
+    .right p{
+        padding-left: 1.25rem /* 20px */;
+        padding-right: 1.25rem /* 20px */;
+    }
+    .btnbox{
+        gap: 1.5rem /* 24px */;
+        padding-left: 1rem /* 16px */;
+        padding-right: 1rem /* 16px */;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .btn{
+        gap: 0.5rem /* 8px */;
+        padding: 0.5rem /* 8px */;
+        padding-left: 0.75rem /* 12px */;
+        padding-right: 0.75rem /* 12px */;
+    }
+}

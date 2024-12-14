@@ -1,0 +1,86 @@
+
+
+/* Box */
+.mainbox{
+    background-color: #1c1c22;
+    color: white;
+
+}
+
+
+/* Group-Box */
+.groupbox{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem /* 48px */;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    margin-top: 6rem /* 96px */;
+    margin-bottom: 6rem /* 96px */;
+}
+/* responsive */
+@media (max-width: 640px) {
+    .groupbox{
+        width: 85%;
+    }
+}
+
+@media (min-width: 768px) {
+    .groupbox{
+        gap: 2rem /* 40px */;
+        flex-direction: row;
+    }
+}
+
+
+
+/* Tab box */
+
+.tabbox{
+    display: flex;
+    flex-direction: column;
+}
+
+.tabbtn{
+    padding-top: 0.75rem /* 12px */;
+    padding-bottom: 0.75rem /* 12px */;
+    margin-top: 0.75rem /* 12px */;
+    margin-bottom: 0.75rem /* 12px */;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(39,39,44,0.5);
+    padding-left: 9rem /* 144px */;
+    padding-right: 9rem /* 144px */;
+}
+
+.selected{
+    background-color: #eab308;
+    font-weight: 600;
+    color: black;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tabbtn {
+        padding-left: 0 /* */;
+        padding-right: 0/* */;
+    }
+}
+
+
+/* tabPanel */
+.paneheading{
+    color: #eab308 ;
+    font-size: 1.875rem /* 30px */;
+    line-height: 2.25rem /* 36px */;
+    margin-bottom: 1rem /* 16px */;
+}
+
+.panel_p{
+    letter-spacing: 1px;
+    margin-top: 0.25rem /* 4px */;
+    margin-bottom: 0.25rem /* 4px */;
+}

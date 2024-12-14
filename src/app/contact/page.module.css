@@ -1,0 +1,85 @@
+
+
+/* form box */
+
+.formbox{
+    width: 90%;
+    color: white;
+    border-width: 1px;
+    border-color: #facc15;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.25rem /* 20px */;
+    height: 500px;
+    border-radius: 9999px;
+}
+
+.form{
+    padding-left: 2.75rem /* 44px */;
+    padding-right: 2.75rem /* 44px */;
+    padding-top: 5rem /* 80px */;
+    padding-bottom: 5rem /* 80px */;
+}
+
+.form p{
+    margin-top: 0.75rem /* 12px */;
+    margin-bottom: 0.25rem /* 4px */;
+}
+
+.form input{
+    width: 95%;
+    font-size: 0.875rem /* 14px */;
+    line-height: 1.25rem /* 20px */;
+    padding: 0.25rem /* 4px */;
+    border-radius: 0.125rem /* 2px */;
+}
+
+.form textarea{
+    width: 95%;
+    font-size: 0.875rem /* 14px */;
+    line-height: 1.25rem /* 20px */;
+    padding: 0.25rem /* 4px */;
+    border-radius: 0.125rem /* 2px */;
+}
+
+.btn{
+    color: black;
+    align-items: center;
+    padding-left: 1.25rem /* 20px */;
+    padding-right: 1.25rem /* 20px */;
+    padding-top: 0.25rem /* 4px */;
+    padding-bottom: 0.25rem /* 4px */;
+    background-color: #facc15;
+    margin-top: 1.25rem /* 20px */;
+    margin-bottom: 1.25rem /* 20px */;
+    border-radius: 1rem /* 16px */;
+}
+
+.btn:hover{
+    background-color: none;
+    color: white;
+}
+
+
+
+
+
+/* responsivee*/
+@media (min-width: 640px) {
+    .formbox{
+        width: 450px;
+        height: 570px;
+    }
+}
+
+
+/* responsive */
+
+@media (min-width: 768px) {
+    .form{
+        padding-left: 6rem /* 96px */;
+        padding-right: 6rem /* 96px */;
+        padding-top: 6rem /* 96px */;
+        padding-bottom: 6rem /* 96px */;
+    }
+}
